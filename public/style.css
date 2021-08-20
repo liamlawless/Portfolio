@@ -1,0 +1,182 @@
+
+body {
+    background-color: blue;
+    margin: 0px;
+    min-width:150px;
+    overflow: auto;
+}
+
+#wrapper {
+    width: 800px;
+    background-color: white;
+    margin: auto;
+    min-height: 100vh;
+}
+
+/* #navbarWrap {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    background-color: white;
+} */
+@media screen and (max-width: 930px) {
+    #wrapper {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #wrapper {
+        width: 100%;
+    }
+}
+
+#nameTitleDiv {
+    font-family: ostrich;
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+    padding:20px 0px;
+    border-bottom: 1px solid lightgray;
+}
+
+#nameTitle {
+    margin:auto;
+}
+
+#navbar {
+    display:flex;
+    justify-content: center;
+    margin:5px 0px;
+}
+
+#navbar div {
+    flex:.25;
+    height:25px;
+    margin:0px 5px;
+    text-align: center;
+}
+
+#background {
+    display:flex;
+    justify-content: flex-end;
+    text-align: center;
+    align-items: center;
+}
+
+#selfie {
+    
+}
+
+#myDesc {
+    font-family: adelle;
+    flex:.75;
+}
+
+
+#projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom:  1px solid lightgray;
+    padding-bottom: 20px;
+}
+
+#projects .iconWrap {
+    border: 1px solid lightgray;
+    margin:10px;
+    height:250px;
+    text-align: center;
+}
+
+.icon {
+    width:300px;
+    height: 175px;
+    margin:10px;
+    text-align: center;
+}
+
+.iconText {
+    color:white;
+    background-color: black;
+    font-family: adelle;
+    padding:20px 10px;
+}
+
+.iconTextBg {
+    background-color: black; position: relative; overflow: hidden;
+}
+
+.hid {
+    visibility:hidden;
+}
+.hoverani {
+    animation: hoverani 1s forwards; 
+}
+
+.unhoverani {
+    animation:hoverani .5s reverse forwards;
+}
+@keyframes hoverani {
+    from{opacity:0; top:100px; height: 40%;} to{opacity:1; top:0px; height: 100%;}
+}
+
+@font-face {
+    font-family: league;
+    src: url(fonts/leaguespartan.otf);
+}
+@font-face {
+    font-family: ostrich;
+    src: url(fonts/ostrichsans.otf);
+}
+@font-face {
+    font-family: adelle;
+    src: url(fonts/adelle.otf);
+}
+
+.iconTitle {
+    font-family: ostrich;
+    font-size:1.5em;
+}
+
+.iconTitle:hover {
+    cursor: pointer;
+    color:blue;
+}
+
+.codeButton {
+    text-align: center;
+    font-family: ostrich;
+    font-size:.9em;
+}
+
+.codeButton:hover {
+    cursor: pointer;
+    color:blue;
+}
+
+
+@media screen and (max-width: 325px) {
+     .icon {
+        width:90%;
+    }
+    .iconText {
+        padding:none;
+        margin:none;
+    }
+
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+a:visited { text-decoration: none; }
+
+.title {
+    font-family: ostrich;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
