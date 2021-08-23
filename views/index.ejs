@@ -11,7 +11,7 @@
 <body>
     <!-- Background wrapper -->
     <div id="wrapper">
-        <div id = "navbarWrap">
+        <div id="navbarWrap" class="sticky">
             <!-- Name/Title -->
             <div id="nameTitleDiv">
                 <span id="nameTitle">Uilliam Lawless</span>
@@ -20,32 +20,29 @@
             <!-- Navbar -->
             <div id="navbar">
                 <div>
-                    <a href="#projects">Projects</a>
+                    <a href="#projTitle">Projects</a>
                 </div>
                 <div>
                     <a href="#aboutMe" href="">About me</a>
                 </div>
                 <div>
-                    <a href="">Links</a>
+                    <a href="#links">Links</a>
                 </div>
             </div>
         </div>
 
+        <div id="backgroundImage">
 
-        <!-- Photo/background -->
-        <div id="background">
-            <div id="myDesc">University of Wisconsin - Madison student studying Computer Science</div>
-            <img id="selfie" src="images/boy.png">
         </div>
 
         <!-- Projects -->
-        <div class="title">
+        <div id="projTitle" class="title">
             My Projects
         </div>
         <div id="projects">
 
             <div class="iconWrap">
-                <div style="background-image: url(images/ratings2.png); background-size:cover" class="icon">
+                <div style="background-image: url(images/ratings2.png);" class="icon">
                     <div class="iconTextBg hid">
                         <div class="iconText"> A side project I made myself. Rate apartments/houses and leave reviews,
                             and search for properties in your area to see what others think before you sign a lease.
@@ -64,7 +61,7 @@
                 </div>
             </div>
             <div class="iconWrap">
-                <div class="icon" style="background-image: url(images/boardspace.png); background-size:100%">
+                <div class="icon" style="background-image: url(images/boardspace.png);">
                     <div class="iconTextBg hid">
                         <div class="iconText"> A class project I made with a couple others in our Software Development
                             course. Easily invite friends or colleagues to join on a collaborative drawing board to have
@@ -82,7 +79,7 @@
             </div>
 
             <div class="iconWrap">
-                <div class="icon" style="background-image: url(images/bytes.png); background-size:100%">
+                <div class="icon" style="background-image: url(images/bytes.png);">
                     <div class="iconTextBg hid">
                         <div class="iconText">A smaller project also made in my Software Development Class. It is a mock
                             site for a made up restaurant called Badger Bytes. Users can browse the menu, add items to a
@@ -105,16 +102,46 @@
             <div class="title">
                 About me
             </div>
+            <!-- Photo/background -->
+            <div id="meBack">
+                <img id="selfie" src="images/me1.jpeg">
+                <div id="myDesc">   <span style = "padding-right:25px"></span>My name is Uilliam (pronounced William, but preferrably Liam) Lawless. I am a 4th year University of Wisconsin - Madison student studying Computer Science,
+                    born and raised in Madison, Wisconsin.
+                    I've had a knack for programming since the start of highschool, where I was taking college
+                    sophomore level CS classes by senior year
+                    through dual-enrollment. A few courses I especially enjoyed at UW-Madison are Data Structures,
+                    Computer Graphics, and especially Software Engineering.
+                    I'm open to all fields of CS from AI to cybersecurity to web development, but so far I have had most
+                    of my hands-on experience with web development.
+                    I am very eager to finally get some real life experience with my degree at an internship or job
+                    after my final semester of Fall 2021.
+                </div>
+            </div>
         </div>
 
-         <!-- Links -->
-         <div id="aboutMe">
+        <!-- Links -->
+        <div id="links">
             <div class="title">
                 Links
             </div>
-            <a href = "">Resume</a>
-            <a href = "">Github</a>
-            <a href = "https://www.linkedin.com/in/liam-lawless-4a838021a">Linkedin</a>
+            <div id="linksFlex">
+                <a target=”_blank” class = "linksLink" href="images/resume.pdf">
+                    <img class = "linkImg" width='auto' height='25px' src="images/resume.png">
+                    <div class = "linkText">Resume</div>
+                </a>
+                <a target=”_blank” class = "linksLink" href="https://github.com/liamlawless">
+                    <img class = "linkImg" width='auto' height='25px' src="images/github.png">
+                    <div class = "linkText">Github</div>
+                </a>
+                <a target=”_blank” class = "linksLink" href="https://www.linkedin.com/in/liam-lawless-4a838021a">
+                    <img class = "linkImg"width='auto' height='25px' src="images/linkedin.png">
+                    <div class = "linkText">Linkedin</div>
+                </a>
+                <a target=”_blank” class = "linksLink" id = "emailCopy">
+                    <img class = "linkImg"width='auto' height='25px' src="images/email.png">
+                    <div class = "linkText"> Email</div>
+                </a>
+            </div>
         </div>
     </div>
 </body>

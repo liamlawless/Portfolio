@@ -1,9 +1,9 @@
 
 body {
-    background-color: blue;
     margin: 0px;
     min-width:150px;
     overflow: auto;
+    background: repeating-linear-gradient(-45deg,#D0D0D0, #D0D0D0 1px,#C0C0C0 7px, #C0C0C0 10px )
 }
 
 #wrapper {
@@ -13,12 +13,24 @@ body {
     min-height: 100vh;
 }
 
-/* #navbarWrap {
+#backgroundImage {
+    background-image: url(https://t3.ftcdn.net/jpg/00/35/83/68/360_F_35836841_wnzp77vcAIHKVQpUCnv7W736wrC6AuIx.jpg);
+    width:100%;
+    height:300px;
+    background-size: cover;
+    overflow: hidden;
+    max-height: 300px;
+    min-height: 0px;
+    background-position: center;
+}
+
+.sticky {
     position: -webkit-sticky; 
     position: sticky;
     top: 0;
     background-color: white;
-} */
+    z-index: 1000;
+}
 @media screen and (max-width: 930px) {
     #wrapper {
         width: 80%;
@@ -52,27 +64,42 @@ body {
 
 #navbar div {
     flex:.25;
-    height:25px;
+    height:28px;
     margin:0px 5px;
     text-align: center;
+    padding-top:5px;
+    font-family: ostrich;
 }
 
-#background {
+#meBack {
     display:flex;
-    justify-content: flex-end;
-    text-align: center;
-    align-items: center;
+    justify-content: flex-start;
 }
 
 #selfie {
-    
+    flex:.25;
+    width: 25%;
+    height:auto;
+    padding-left: 10px;
 }
 
 #myDesc {
     font-family: adelle;
     flex:.75;
+    margin:5px;
 }
 
+@media screen and (max-width: 700px) {
+    #meBack {
+        display:block;
+        
+    }
+    #selfie {
+        width:95%;
+        height:auto;
+        text-align: center;
+    }
+}
 
 #projects {
     display: flex;
@@ -94,6 +121,8 @@ body {
     height: 175px;
     margin:10px;
     text-align: center;
+    background-position: center;
+    background-size:cover;
 }
 
 .iconText {
@@ -179,4 +208,46 @@ a:visited { text-decoration: none; }
     text-align: center;
     padding-top:10px;
     padding-bottom: 10px;
+}
+
+#links {
+    text-align: center;
+}
+
+.linksLink {
+    width:60px;
+    text-align: center;
+}
+
+#linksFlex {
+    display: flex;
+    justify-content: space-around;
+    max-width: 400px;
+    margin: auto;
+    height:50px;
+}
+.linkText {
+    
+    text-align: center;
+    font-family: ostrich;
+    font-size:.9em;
+}
+
+.linksLink:hover {
+
+}
+
+.sizeAni {
+    animation: sizeani .25s forwards;
+}
+
+.resizeAni {
+    animation: sizeani .25s reverse;
+}
+@keyframes sizeani {
+    from{transform: scale(1);} to{transform: scale(1.5);}
+}
+
+#emailCopy:hover {
+    cursor: copy;
 }
